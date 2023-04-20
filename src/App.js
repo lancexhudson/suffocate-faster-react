@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import './App.css';
-import Waveform from '../src/components/Waveform';
 import NavBar from './components/NavBar';
 import Bio from './components/pages/Bio';
 import Home from './components/pages/Home';

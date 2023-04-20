@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css';
 import { Button } from './Button';
 import './HeroHome.css';
@@ -32,9 +33,14 @@ function HeroHome() {
             className="btns"
             buttonStyle="btn--outline"
             buttonSize="btn--large"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href =
+                ('https://smartpunkshop.com/collections/suffocate-faster',
+                '_blank');
+            }}
           >
             PRE-ORDER <i className="fa-solid fa-record-vinyl" />
-            {/* https://smartpunkshop.com/collections/suffocate-faster */}
           </Button>
         </div>
       </div>
