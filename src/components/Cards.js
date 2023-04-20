@@ -44,6 +44,7 @@ function Cards() {
           </a>
         </div>
       </div>
+      <div id="contact">CONTACT: CTOWNING@GMAIL.COM</div>
     </div>
   );
 }

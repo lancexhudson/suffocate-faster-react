@@ -3,8 +3,13 @@ import '../App.css';
 import { Button } from './Button';
 import './HeroHome.css';
 import artwork from '../assets/artwork.png';
+import lostOnes from '../assets/lost-ones.mp3';
 
 function HeroHome() {
+  function play() {
+    new Audio(lostOnes).play();
+  }
+
   return (
     <div className="hero-container">
       <h1>"LOST ONES"</h1>
@@ -19,7 +24,7 @@ function HeroHome() {
             className="btns"
             buttonStyle="btn--outline"
             buttonSize="btn--large"
-            onClick={console.log('hey')}
+            onClick={play}
           >
             PLAY SONG <i className="far fa-play-circle" />
           </Button>

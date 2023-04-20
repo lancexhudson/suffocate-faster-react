@@ -35,7 +35,7 @@ p {
 
 #upcoming {
   color: #fff;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 #title {
@@ -73,7 +73,8 @@ p {
   margin: 6px;
 }
 
-.fa-play-circle {
+.fa-play-circle,
+.fa-record-vinyl {
   margin-left: 4px;
 }
 

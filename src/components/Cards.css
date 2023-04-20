@@ -1,6 +1,6 @@
 .cards {
   padding: 2rem;
-  height: 100px;
+  height: 120px;
   background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
 }
 
@@ -26,6 +26,20 @@ h1 {
   /* gap: 0.5rem; */
   color: var(--text-color);
   font-weight: 400;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  color: #727171;
+  font-weight: lighter;
+  padding-top: 25px;
+}
+
+#contact:hover {
+  color: #fff;
 }
 
 #interest_icon {
