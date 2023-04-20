@@ -33,6 +33,16 @@ p {
   font-size: 16px;
 }
 
+#upcoming {
+  color: #fff;
+  font-size: 16px;
+}
+
+#title {
+  color: #fff;
+  font-size: 26px;
+}
+
 .album-container {
   display: flex;
   flex-direction: column;

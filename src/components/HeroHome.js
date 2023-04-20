@@ -8,8 +8,8 @@ function HeroHome() {
   return (
     <div className="hero-container">
       <h1>"LOST ONES"</h1>
-      <p>From the EP,</p>
-      <p>THIS IS THE WAY</p>
+      <p id="upcoming">FROM THE UPCOMING EP</p>
+      <p id="title">THIS IS THE WAY VOL. 1</p>
       <div className="album-container">
         <div className="artwork-container">
           <img src={artwork} alt="" className="artwork" />
