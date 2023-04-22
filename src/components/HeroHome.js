@@ -4,11 +4,13 @@ import { Button } from './Button';
 import './HeroHome.css';
 import artwork from '../assets/artwork.png';
 import lostOnes from '../assets/lost-ones.mp3';
+import PlayerLogic from '../player/PlayerLogic';
+import Player from '../player/Player';
 
 function HeroHome() {
-  function play() {
-    new Audio(lostOnes).play();
-  }
+  //   function play() {
+  //     new Audio(lostOnes).play();
+  //   }
 
   return (
     <div className="hero-container">
@@ -25,19 +27,25 @@ function HeroHome() {
             buttonStyle="btn--outline"
             buttonSize="btn--large"
             id="toggle"
-            onClick={play}
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href =
+                'https://soundcloud.com/user-750412490/lost-ones/s-knDtt7T8l3D';
+            }}
           >
-            PLAY SONG <i className="far fa-play-circle" />
+            {' '}
+            SOUNDCLOUD <i className="fa-solid fa-headphones" />
+            {/* PLAY SONG <i className="far fa-play-circle" /> */}
           </Button>
           <Button
             className="btns"
             buttonStyle="btn--outline"
             buttonSize="btn--large"
+            // onClick={play}
             onClick={(e) => {
               e.preventDefault();
               window.location.href =
-                ('https://smartpunkshop.com/collections/suffocate-faster',
-                '_blank');
+                'https://smartpunkshop.com/collections/suffocate-faster';
             }}
           >
             PRE-ORDER <i className="fa-solid fa-record-vinyl" />
