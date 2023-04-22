@@ -1,6 +1,6 @@
 .cards {
   padding: 2rem;
-  height: 120px;
+  height: 140px;
   background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
 }
 
@@ -35,10 +35,27 @@ h1 {
   font-size: 12px;
   color: #727171;
   font-weight: lighter;
-  padding-top: 25px;
+  padding-top: 20px;
+  /* padding-bottom: 20px; */
+  cursor: pointer;
+}
+
+#contact2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  color: #727171;
+  font-weight: lighter;
+  /* padding-top: 20px; */
+  /* padding-bottom: 20px; */
+  cursor: pointer;
 }
 
 #contact:hover {
+  color: #fff;
+}
+#contact2:hover {
   color: #fff;
 }
 

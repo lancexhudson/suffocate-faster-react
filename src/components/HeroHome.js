@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../App.css';
 import { Button } from './Button';
 import './HeroHome.css';
@@ -25,6 +24,7 @@ function HeroHome() {
             className="btns"
             buttonStyle="btn--outline"
             buttonSize="btn--large"
+            id="toggle"
             onClick={play}
           >
             PLAY SONG <i className="far fa-play-circle" />

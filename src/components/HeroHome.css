@@ -57,10 +57,10 @@ p {
   /* object-fit: cover; */
 }
 
-.artwork:hover {
+/* .artwork:hover {
   transform: scale(1.05);
-  /* border: #fff solid; */
-}
+  border: #fff solid;
+} */
 
 .hero-btns {
   display: flex;
