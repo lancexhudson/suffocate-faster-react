@@ -34,7 +34,7 @@ function HeroHome() {
             }}
           >
             {' '}
-            SOUNDCLOUD <i className="fa-solid fa-headphones" />
+            SOUNDCLOUD <i className="fa-brands fa-soundcloud" />
             {/* PLAY SONG <i className="far fa-play-circle" /> */}
           </Button>
           <Button
