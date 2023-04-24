@@ -1,7 +1,7 @@
 .navbar {
   background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
   /* height was 80px before adding logo */
-  height: 80px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height: 100px;
   max-width: 1500px;
 }
 
@@ -26,7 +26,10 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  /* No margin left before adding logo */
   margin-left: -5px;
+  /* No margin bottom before adding logo */
+  margin-bottom: 10px;
 }
 
 .navbar-logo {

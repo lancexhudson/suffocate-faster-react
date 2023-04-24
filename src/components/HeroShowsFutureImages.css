@@ -63,20 +63,14 @@
   margin: 6px;
 }
 
-/* .fa-play-circle,
-.fa-record-vinyl,
-.fa-headphones,
-.fa-soundcloud {
-  margin-left: 4px;
-} */
-
 .slider {
   position: relative;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 150px;
+  /* padding-top was 150px */
+  padding-top: 100px;
 }
 
 /* .image {
@@ -86,6 +80,7 @@
 } */
 
 .image {
+  /* TRY 60 REM TO SEE IF THIS LOOKS BETTER ON MOBILE */
   width: 100%;
   height: 40rem;
   max-width: auto;
@@ -95,9 +90,11 @@
 
 .right-arrow {
   position: absolute;
-  top: 50%;
+  top: 90%;
+  /* top: 50%; */
+  right: 34%;
   /* right: 32px; */
-  right: 50px;
+  /* right: 50px; */
   font-size: 3rem;
   color: #fff;
   z-index: 10;
@@ -107,8 +104,10 @@
 
 .left-arrow {
   position: absolute;
-  top: 50%;
-  left: 32px;
+  top: 90%;
+  /* top: 50%; */
+  left: 34%;
+  /* left: 32px; */
   /* left: 50px; */
   font-size: 3rem;
   color: #fff;
