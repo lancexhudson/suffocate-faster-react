@@ -1,5 +1,6 @@
 .navbar {
   background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  /* height was 80px before adding logo */
   height: 80px;
   display: flex;
   justify-content: center;
@@ -16,6 +17,16 @@
   align-items: center;
   height: 80px;
   max-width: 1500px;
+}
+
+.sxf-logo {
+  background-image: url('https://user-images.githubusercontent.com/106623072/233877472-e9c2a251-3cd2-4130-a081-acac4f21f9c5.png');
+  width: 250px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: -5px;
 }
 
 .navbar-logo {
