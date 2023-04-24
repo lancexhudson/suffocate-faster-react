@@ -6,6 +6,8 @@ import artwork from '../assets/artwork.png';
 import lostOnes from '../assets/lost-ones.mp3';
 import PlayerLogic from '../player/PlayerLogic';
 import Player from '../player/Player';
+import { Link } from 'react-router-dom';
+import HeroShows from './HeroShows';
 
 function HeroHome() {
   //   function play() {

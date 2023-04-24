@@ -6,6 +6,7 @@ import Bio from './components/pages/Bio';
 import Home from './components/pages/Home';
 import Music from './components/pages/Music';
 import Shows from './components/pages/Shows';
+import PastShows from './components/pages/PastShows';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/bio" exact element={<Bio />} />
           <Route path="/music" exact element={<Music />} />
           <Route path="/shows" exact element={<Shows />} />
+          {/* <Route path="/pastshows" exact element={<PastShows />} /> */}
         </Routes>
       </Router>
     </div>

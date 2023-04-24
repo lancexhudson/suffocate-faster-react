@@ -1,12 +1,16 @@
 import React from 'react';
 import '../App.css';
 import './HeroShows.css';
+import { Link } from 'react-router-dom';
 import { Button } from './Button';
 import HeroShowsPastImages from './HeroShowsPastImages';
 import HeroShowsFutureImages from './HeroShowsFutureImages';
-// import ImageSlider from './ImageSlider';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Shows from './pages/Shows';
 import ImageSlider from './ImageSlider';
 import { SliderData } from './SliderData';
+import ImageSliderPast from './ImageSliderPast';
+import { SliderDataPast } from './SliderDataPast';
 import './HeroShowsFutureImages.css';
 
 // const galleryImagesPastShows = [
@@ -30,6 +34,7 @@ import './HeroShowsFutureImages.css';
 function HeroShows() {
   // return <ImageSlider />;
   // return <HeroShowsPastImages galleryImages={galleryImagesPastShows} />;
+  // return ;
   return <ImageSlider slides={SliderData} />;
 }
 

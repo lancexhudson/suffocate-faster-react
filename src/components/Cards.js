@@ -4,7 +4,6 @@ import './Cards.css';
 function Cards() {
   return (
     <div className="cards">
-      {/* <h1>check out this band</h1> */}
       <div className="cards__container">
         <div class="interest_item">
           <a
@@ -32,6 +31,15 @@ function Cards() {
             rel="noreferrer"
           >
             <i className="fa-brands fa-instagram" id="interest_icon" />
+          </a>
+        </div>
+        <div class="interest_item">
+          <a
+            href="https://twitter.com/suffocatexfstr"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fa-brands fa-twitter" id="interest_icon" />
           </a>
         </div>
         <div class="interest_item">

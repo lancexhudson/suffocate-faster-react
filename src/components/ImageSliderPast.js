@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
-import { Navigate } from 'react-router-dom';
-import { SliderData } from './SliderData';
+import { SliderDataPast } from './SliderDataPast';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import { Button } from './Button';
-import { Link } from 'react-router-dom';
-import Shows from './pages/Shows';
-import HeroShows from './HeroShows';
+// import { Link } from 'react-router-dom';
 
-const ImageSlider = ({ slides }) => {
+const ImageSliderPast = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -32,11 +29,7 @@ const ImageSlider = ({ slides }) => {
             buttonStyle="btn--outline"
             buttonSize="btn--large"
             id="toggle"
-            onClick={<Navigate to="/src/components/pages/PastShows.js" />}
-            // onClick={(e) => {
-            //   e.preventDefault();
-            //   window.location.href = <Link to={HeroShows} />;
-            // }}
+            // onClick={}
           >
             {' '}
             UPCOMING SHOWS
@@ -55,7 +48,7 @@ const ImageSlider = ({ slides }) => {
       <section className="slider">
         <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
         <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
-        {SliderData.map((slide, index) => {
+        {SliderDataPast.map((slide, index) => {
           return (
             <div
               className={index === current ? 'slide active' : 'slide'}
@@ -72,4 +65,4 @@ const ImageSlider = ({ slides }) => {
   );
 };
 
-export default ImageSlider;
+export default ImageSliderPast;
