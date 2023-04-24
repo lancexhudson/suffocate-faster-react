@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navigate } from 'react-router-dom';
 import { SliderData } from './SliderData';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
@@ -26,17 +26,17 @@ const ImageSlider = ({ slides }) => {
   return (
     <div className="future-shows-container">
       <div className="album-container">
-        <div className="hero-btns">
-          <Button
+        {/* <div className="upcoming-text">UPCOMING SHOWS</div> */}
+        {/*  <div className="hero-btns">
+           <Button
             className="btns"
             buttonStyle="btn--outline"
             buttonSize="btn--large"
             id="toggle"
-            onClick={<Navigate to="/src/components/pages/PastShows.js" />}
-            // onClick={(e) => {
-            //   e.preventDefault();
-            //   window.location.href = <Link to={HeroShows} />;
-            // }}
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = <Link to={HeroShows} />;
+            }}
           >
             {' '}
             UPCOMING SHOWS
@@ -45,12 +45,12 @@ const ImageSlider = ({ slides }) => {
             className="btns"
             buttonStyle="btn--outline"
             buttonSize="btn--large"
-            // onClick={play}
-            // onClick={<Link to="/pastShows" />}
+            onClick={play}
+            onClick={<Link to="/pastShows" />}
           >
             PAST SHOWS
           </Button>
-        </div>
+        </div>*/}
       </div>
       <section className="slider">
         <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />

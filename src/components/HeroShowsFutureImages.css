@@ -10,6 +10,7 @@
   align-items: center;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   object-fit: contain; */
+  overflow-x: hidden;
 }
 
 .album-container {
@@ -17,6 +18,13 @@
   flex-direction: column;
   align-items: center;
 }
+
+/* .upcoming-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+} */
 
 /* .galleryWrap {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
@@ -68,6 +76,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 150px;
 }
 
 /* .image {
@@ -86,7 +95,7 @@
 
 .right-arrow {
   position: absolute;
-  top: 35%;
+  top: 50%;
   /* right: 32px; */
   right: 50px;
   font-size: 3rem;
@@ -98,7 +107,7 @@
 
 .left-arrow {
   position: absolute;
-  top: 35%;
+  top: 50%;
   left: 32px;
   /* left: 50px; */
   font-size: 3rem;
