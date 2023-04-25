@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Navigate } from 'react-router-dom';
 import { SliderData } from './SliderData';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import { FaCircleArrowLeft } from 'react-icons';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import Shows from './pages/Shows';
@@ -53,6 +54,8 @@ const ImageSlider = ({ slides }) => {
         </div>*/}
       </div>
       <section className="slider">
+        {/* <FontAwesomeIcon icon="fa-regular fa-circle-arrow-left" /> */}
+        {/* <FaCircleArrowLeft className="left-arrow" onClick={prevSlide} /> */}
         <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
         <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
         {SliderData.map((slide, index) => {
