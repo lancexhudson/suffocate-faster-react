@@ -3,7 +3,7 @@
     url('/src/assets/background.jpg') center center/ cover no-repeat;
   /* background: url('/src/assets/background.jpg') center center/ cover no-repeat; */
   background-position: fixed;
-  padding-top: 100px;
+  padding-top: 35px;
   height: 100vh;
   /* 100VW is new. give it a shot */
   width: 100vw;

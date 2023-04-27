@@ -7,7 +7,6 @@ const Home = () => {
   return (
     <div>
       <HeroHome />
-      {/* Remove Cards section to cut page off at the Hero */}
       <Cards />
     </div>
   );
