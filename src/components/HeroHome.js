@@ -3,6 +3,7 @@ import '../App.css';
 import { Button } from './Button';
 import './HeroHome.css';
 import artwork from '../assets/artwork.png';
+import epVinyl from '../assets/epVinyl.png';
 import lostOnes from '../assets/lost-ones.mp3';
 import PlayerLogic from '../player/PlayerLogic';
 import Player from '../player/Player';
@@ -21,7 +22,7 @@ function HeroHome() {
       <p id="title">THIS IS THE WAY VOL. 1</p>
       <div className="album-container">
         <div className="artwork-container">
-          <img src={artwork} alt="" className="artwork" />
+          <img src={epVinyl} alt="" className="artwork" />
         </div>
         <div className="hero-btns">
           <Button
