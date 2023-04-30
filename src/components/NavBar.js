@@ -29,6 +29,7 @@ function NavBar() {
         <div className="navbar-container">
           <div className="sxf-logo">.</div>
           {/* <Link to="/" className="navbar-logo" onClick={closeMobileMenu}></Link> */}
+
           {/* <div className="sxf-logo">
             <img
               src="https://user-images.githubusercontent.com/106623072/233876268-89814ddb-8d4f-4d7b-b25c-58d891a15f96.png"

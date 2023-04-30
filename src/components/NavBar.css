@@ -98,6 +98,9 @@
   .nav-menu {
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
+    /* justify content center added on 4/30/23 to center active mobile menu */
+    justify-content: center;
     width: 100%;
     height: 90vh;
     position: absolute;
@@ -109,6 +112,8 @@
 
   .nav-menu.active {
     background: #242222;
+    /* display: flex;
+    align-items: center; */
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
