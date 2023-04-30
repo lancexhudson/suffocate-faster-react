@@ -1,8 +1,10 @@
 .hero-container {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url('/src/assets/background.jpg') center center/ cover no-repeat;
-  /* background: url('/src/assets/background.jpg') center center/ cover no-repeat; */
-  background-position: fixed;
+    url('/src/assets/background.jpg') center top / cover no-repeat;
+  /* alt way of doing background image: center center w/ background2.jpg 
+ + remove  background-attachment: fixed*/
+  /* background-position: center; */
+  background-attachment: fixed;
   padding-top: 35px;
   height: 100vh;
   /* 100VW is new. give it a shot */

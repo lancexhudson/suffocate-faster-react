@@ -1,8 +1,10 @@
 .hero-bio-container {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url('/src/assets/background.jpg') center center/ cover no-repeat;
-  /* background: url('/src/assets/background.jpg') center center/ cover no-repeat; */
-  background-position: fixed;
+    url('/src/assets/background.jpg') center top/ cover no-repeat;
+  /* alt way of doing background image: center center w/ background2.jpg 
+ + remove  background-attachment: fixed*/
+  /* background-position: fixed; */
+  background-attachment: fixed;
   height: 100vh;
   width: 100%;
   display: flex;
