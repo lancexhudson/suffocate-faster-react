@@ -7,6 +7,8 @@ import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import Shows from './pages/Shows';
 import HeroShows from './HeroShows';
+import HeroShowsPastImages from './HeroShowsPastImages';
+import HeroShowsFutureImages from './HeroShowsFutureImages';
 
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -26,17 +28,17 @@ const ImageSlider = ({ slides }) => {
 
   return (
     <div className="future-shows-container">
-      <div className="album-container">
-        {/* <div className="upcoming-text">UPCOMING SHOWS</div> */}
-        {/*  <div className="hero-btns">
-           <Button
+      {/* <div className="album-container">
+        <div className="upcoming-text"></div>
+        <div className="hero-btns">
+          <Button
             className="btns"
             buttonStyle="btn--outline"
             buttonSize="btn--large"
             id="toggle"
             onClick={(e) => {
               e.preventDefault();
-              window.location.href = <Link to={HeroShows} />;
+              window.location.href = <Link to="/PastShows"></Link>;
             }}
           >
             {' '}
@@ -46,13 +48,20 @@ const ImageSlider = ({ slides }) => {
             className="btns"
             buttonStyle="btn--outline"
             buttonSize="btn--large"
-            onClick={play}
-            onClick={<Link to="/pastShows" />}
+            // onClick={play}
+            // onClick={<Link to={HeroShowsPastImages} />}
           >
-            PAST SHOWS
+            <Link
+              to="/PastShows"
+              className="btns"
+              buttonStyle="btn--outline"
+              buttonSize="btn--large"
+            >
+              PAST SHOWS
+            </Link>
           </Button>
-        </div>*/}
-      </div>
+        </div>
+      </div> */}
       <section className="slider">
         {/* <FontAwesomeIcon icon="fa-regular fa-circle-arrow-left" /> */}
         {/* <FaCircleArrowLeft className="left-arrow" onClick={prevSlide} /> */}
@@ -64,9 +73,7 @@ const ImageSlider = ({ slides }) => {
               className={index === current ? 'slide active' : 'slide'}
               key={index}
             >
-              {index === current && (
-                <img src={slide.image} alt="travel image" className="image" />
-              )}
+              {index === current && <img src={slide.image} className="image" />}
             </div>
           );
         })}

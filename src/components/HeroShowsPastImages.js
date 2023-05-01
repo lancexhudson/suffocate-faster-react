@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './HeroShowsPastImages.css';
+import ImageSlider from './ImageSlider';
+import { SliderDataPast } from './SliderDataPast';
 
 const HeroShowsPastImages = ({ galleryImages }) => {
   const [slideNumber, setSlideNumber] = useState(0);
@@ -27,6 +29,7 @@ const HeroShowsPastImages = ({ galleryImages }) => {
           })}
       </div>
     </div>
+    // <ImageSlider slides={SliderDataPast} />
   );
 };
 

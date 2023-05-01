@@ -18,7 +18,7 @@ function App() {
           <Route path="/bio" exact element={<Bio />} />
           <Route path="/music" exact element={<Music />} />
           <Route path="/shows" exact element={<Shows />} />
-          {/* <Route path="/pastshows" exact element={<PastShows />} /> */}
+          <Route path="/pastShows" exact element={<PastShows />} />
         </Routes>
       </Router>
     </div>
