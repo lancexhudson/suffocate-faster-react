@@ -21,9 +21,9 @@ function HeroHome() {
       <p id="upcoming">FROM THE UPCOMING EP</p>
       <p id="title">THIS IS THE WAY VOL. 1</p>
       <div className="album-container">
-        <div className="artwork-container">
-          <img src={epVinyl} alt="" className="artwork" />
-        </div>
+        {/* <div className="artwork-container"> */}
+        <img src={epVinyl} alt="" className="artwork" />
+        {/* </div> */}
         <div className="hero-btns">
           <Button
             className="btns"

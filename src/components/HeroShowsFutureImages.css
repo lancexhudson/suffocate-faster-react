@@ -16,6 +16,7 @@
   object-fit: contain; */
   overflow-x: hidden;
   overflow-y: hidden;
+  padding: 40px;
 }
 
 .album-container {
@@ -124,6 +125,13 @@
     font-size: 70px;
     margin-top: -150px;
     padding: 0px 20px;
+  }
+
+  .left-arrow {
+    left: -1px;
+  }
+  .right-arrow {
+    right: -1px;
   }
 }
 
