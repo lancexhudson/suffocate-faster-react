@@ -1,4 +1,6 @@
 import React from 'react';
+import { useRef, useState, useEffect } from 'react';
+
 import '../App.css';
 import { Button } from './Button';
 import './HeroHome.css';
@@ -6,9 +8,10 @@ import artwork from '../assets/artwork.png';
 import epVinyl from '../assets/epVinyl.png';
 import lostOnes from '../assets/lost-ones.mp3';
 import PlayerLogic from '../player/PlayerLogic';
-import Player from '../player/Player';
+// import Player from '../player/Player';
 import { Link } from 'react-router-dom';
 import HeroShows from './HeroShows';
+import Player from './Player';
 
 function HeroHome() {
   //   function play() {
@@ -30,6 +33,8 @@ function HeroHome() {
             buttonStyle="btn--outline"
             buttonSize="btn--large"
             id="toggle"
+            // onClick={play}
+
             onClick={(e) => {
               e.preventDefault();
               window.location.href =
@@ -44,7 +49,6 @@ function HeroHome() {
             className="btns"
             buttonStyle="btn--outline"
             buttonSize="btn--large"
-            // onClick={play}
             onClick={(e) => {
               e.preventDefault();
               window.location.href =
