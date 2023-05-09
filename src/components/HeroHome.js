@@ -14,9 +14,19 @@ import HeroShows from './HeroShows';
 import Player from './Player';
 
 function HeroHome() {
-  //   function play() {
-  //     new Audio(lostOnes).play();
+  // function play() {
+  //   new Audio(lostOnes).play();
+  // }
+
+  // function pause() {
+  //   new Audio(lostOnes).pause();
+  // }
+
+  // function togglePlay() {
+  //   if (!play) {
+  //     pause();
   //   }
+  // }
 
   return (
     <div className="hero-container">
@@ -33,8 +43,7 @@ function HeroHome() {
             buttonStyle="btn--outline"
             buttonSize="btn--large"
             id="toggle"
-            // onClick={play}
-
+            // onClick={playPause}
             onClick={(e) => {
               e.preventDefault();
               window.location.href =
