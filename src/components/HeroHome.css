@@ -65,11 +65,6 @@ p {
   /* object-fit: cover; */
 }
 
-/* .artwork:hover {
-  transform: scale(1.05);
-  border: #fff solid;
-} */
-
 .hero-btns {
   display: flex;
   flex-direction: row;

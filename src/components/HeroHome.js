@@ -36,6 +36,7 @@ function HeroHome() {
       <div className="album-container">
         {/* <div className="artwork-container"> */}
         <img src={epVinyl} alt="" className="artwork" />
+        {/* <img src={artwork} alt="" class="artwork-alt" /> */}
         {/* </div> */}
         <div className="hero-btns">
           <Button
