@@ -12,6 +12,7 @@ import PlayerLogic from '../player/PlayerLogic';
 import { Link } from 'react-router-dom';
 import HeroShows from './HeroShows';
 import Player from './AudioPlayer';
+import promoMerch from '../assets/promoMerch.jpeg';
 
 function HeroHome() {
   // function play() {
@@ -30,11 +31,11 @@ function HeroHome() {
 
   return (
     <div className="hero-container">
-      <h1>"LOST ONES"</h1>
-      <p id="upcoming">FROM THE UPCOMING EP</p>
-      <p id="title">THIS IS THE WAY VOL. 1</p>
+      <h2>THIS IS THE WAY VOL. 1</h2>
+      <p id="upcoming">NOW STREAMING ON ALL PLATFORMS</p>
+      {/* <p id="title">PRE-ORDERS ARE AVAILABLE AT SMARTPUNK</p> */}
       <div className="album-container">
-        <img src={epVinyl} alt="" className="artwork" />
+        <img src={promoMerch} alt="" className="artwork" />
 
         <div className="hero-btns">
           <Button
@@ -63,7 +64,7 @@ function HeroHome() {
                 'https://smartpunkshop.com/collections/suffocate-faster';
             }}
           >
-            PRE-ORDER <i className="fa-solid fa-record-vinyl" />
+            SMARTPUNK <i className="fa-solid fa-record-vinyl" />
           </Button>
         </div>
       </div>

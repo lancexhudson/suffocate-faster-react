@@ -7,7 +7,7 @@ function Music() {
   return (
     <div>
       <HeroMusic />
-      <Cards />
+      {/* <Cards /> */}
     </div>
   );
 }
