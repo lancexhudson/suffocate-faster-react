@@ -31,8 +31,10 @@ function HeroHome() {
 
   return (
     <div className="hero-container">
-      <h2>THIS IS THE WAY VOL. 1</h2>
-      <p id="upcoming">NOW STREAMING ON ALL PLATFORMS</p>
+      {/* <h2>THIS IS THE WAY VOL. 1</h2> */}
+      <p id="upcoming">THIS IS THE WAY VOL. 1</p>
+
+      <p id="upcoming">NOW STREAMING</p>
       {/* <p id="title">PRE-ORDERS ARE AVAILABLE AT SMARTPUNK</p> */}
       <div className="album-container">
         <img src={promoMerch} alt="" className="artwork" />
