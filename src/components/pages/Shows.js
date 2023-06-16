@@ -9,7 +9,7 @@ function Shows() {
   return (
     <div>
       <HeroShows />
-      <Cards />
+      {/* <Cards /> */}
     </div>
   );
 }

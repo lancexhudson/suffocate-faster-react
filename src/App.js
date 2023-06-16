@@ -7,6 +7,7 @@ import Home from './components/pages/Home';
 import Music from './components/pages/Music';
 import Shows from './components/pages/Shows';
 import PastShows from './components/pages/PastShows';
+import Footer from './components/Cards';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/shows" exact element={<Shows />} />
           <Route path="/pastShows" exact element={<PastShows />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

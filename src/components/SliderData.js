@@ -7,4 +7,8 @@ export const SliderData = [
     image:
       'https://user-images.githubusercontent.com/106623072/233873241-64a0d6fa-a927-47cb-bbf0-78f7f20c93cb.jpeg',
   },
+  {
+    image:
+      'https://github.com/lancexhudson/tight-grip-react/assets/106623072/09e28b9e-f3e9-41a6-9964-ab8c977ab949',
+  },
 ];

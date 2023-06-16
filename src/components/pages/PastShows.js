@@ -9,7 +9,7 @@ function PastShows() {
   return (
     <div>
       <HeroShowsPastImages />
-      <Cards />
+      {/* <Cards /> */}
     </div>
   );
 }

@@ -1,4 +1,6 @@
 import React from 'react';
+import { useRef, useState, useEffect } from 'react';
+// import AudioPlayer from './AudioPlayer';
 import '../App.css';
 import { Button } from './Button';
 import './HeroHome.css';
@@ -6,30 +8,42 @@ import artwork from '../assets/artwork.png';
 import epVinyl from '../assets/epVinyl.png';
 import lostOnes from '../assets/lost-ones.mp3';
 import PlayerLogic from '../player/PlayerLogic';
-import Player from '../player/Player';
+// import Player from '../player/Player';
 import { Link } from 'react-router-dom';
 import HeroShows from './HeroShows';
+import Player from './AudioPlayer';
+import promoMerch from '../assets/promoMerch.jpeg';
 
 function HeroHome() {
-  //   function play() {
-  //     new Audio(lostOnes).play();
+  // function play() {
+  //   new Audio(lostOnes).play();
+  // }
+
+  // function pause() {
+  //   new Audio(lostOnes).pause();
+  // }
+
+  // function togglePlay() {
+  //   if (!play) {
+  //     pause();
   //   }
+  // }
 
   return (
     <div className="hero-container">
-      <h1>"LOST ONES"</h1>
-      <p id="upcoming">FROM THE UPCOMING EP</p>
-      <p id="title">THIS IS THE WAY VOL. 1</p>
+      <h2>THIS IS THE WAY VOL. 1</h2>
+      <p id="upcoming">NOW STREAMING ON ALL PLATFORMS</p>
+      {/* <p id="title">PRE-ORDERS ARE AVAILABLE AT SMARTPUNK</p> */}
       <div className="album-container">
-        <div className="artwork-container">
-          <img src={epVinyl} alt="" className="artwork" />
-        </div>
+        <img src={promoMerch} alt="" className="artwork" />
+
         <div className="hero-btns">
           <Button
             className="btns"
             buttonStyle="btn--outline"
             buttonSize="btn--large"
             id="toggle"
+            //onClick={togglePlay}
             onClick={(e) => {
               e.preventDefault();
               window.location.href =
@@ -44,14 +58,13 @@ function HeroHome() {
             className="btns"
             buttonStyle="btn--outline"
             buttonSize="btn--large"
-            // onClick={play}
             onClick={(e) => {
               e.preventDefault();
               window.location.href =
                 'https://smartpunkshop.com/collections/suffocate-faster';
             }}
           >
-            PRE-ORDER <i className="fa-solid fa-record-vinyl" />
+            SMARTPUNK <i className="fa-solid fa-record-vinyl" />
           </Button>
         </div>
       </div>

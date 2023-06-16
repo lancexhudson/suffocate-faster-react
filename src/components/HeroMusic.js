@@ -1,32 +1,37 @@
 import React from 'react';
 import '../App.css';
 import './HeroMusic.css';
-import { Button } from './Button';
+import onlyTime from '../assets/onlyTime.jpg';
+import messenger from '../assets/messenger.jpeg';
+import artwork from '../assets/artwork.png';
 
 function HeroMusic() {
   return (
     <div className="hero-music-container">
-      <h1>COMING</h1>
-      <h2>SOON</h2>
-      <div className="album-container">
-        <div className="artwork-container"></div>
-        <div className="hero-btns">
-          {/* <Button
-            className="btns"
-            buttonStyle="btn--outline"
-            buttonSize="btn--large"
-            onClick={console.log('hey')}
-          >
-            PLAY SONG <i className="far fa-play-circle" />
-          </Button>
-          <Button
-            className="btns"
-            buttonStyle="btn--outline"
-            buttonSize="btn--large"
-          >
-            PRE-ORDER
-          </Button> */}
-        </div>
+      <div className="album-music-container">
+        <div id="title">THIS IS THE WAY VOL. 1</div>
+        <div id="title-sub">SMARTPUNK</div>
+        {/* <div className="artwork"> */}
+        <img src={artwork} alt="This is the Way Vol. 1" className="artwork" />
+        {/* </div> */}
+      </div>
+      <div className="album-music-container">
+        <div id="title">DON'T KILL THE MESSENGER</div>
+        <div id="title-sub">1981 RECORDS</div>
+        {/* <div className="artwork"> */}
+        <img
+          src={messenger}
+          alt="Don't Kill the Messenger"
+          className="artwork"
+        />
+        {/* </div> */}
+      </div>
+      <div className="album-music-container">
+        <div id="title">ONLY TIME WILL TELL</div>
+        <div id="title-sub">BROKEN SOUNDS</div>
+        {/* <div className="artwork"> */}
+        <img src={onlyTime} alt="Only Time Will Tell" className="artwork" />
+        {/* </div> */}
       </div>
     </div>
   );
