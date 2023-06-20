@@ -40,22 +40,22 @@ function HeroHome() {
         <img src={promoMerch} alt="" className="artwork" />
 
         <div className="hero-btns">
-          <Button
-            className="btns"
-            buttonStyle="btn--outline"
-            buttonSize="btn--large"
-            id="toggle"
-            //onClick={togglePlay}
-            onClick={(e) => {
-              e.preventDefault();
-              window.location.href =
-                'https://soundcloud.com/user-750412490/lost-ones/s-knDtt7T8l3D';
-            }}
-          >
+          {/* <Button> 
+          // className="btns"
+          // buttonStyle="btn--outline"
+          // buttonSize="btn--large"
+          // id="toggle"
+          //onClick={togglePlay}
+          // onClick={(e) => {
+          // e.preventDefault();
+          // window.location.href =
+          // 'https://soundcloud.com/user-750412490/lost-ones/s-knDtt7T8l3D';
+          // }}
+          // >
             {' '}
-            SOUNDCLOUD <i className="fa-brands fa-soundcloud" />
-            {/* PLAY SONG <i className="far fa-play-circle" /> */}
-          </Button>
+            {/* SOUNDCLOUD <i className="fa-brands fa-soundcloud" /> */}
+          {/* PLAY SONG <i className="far fa-play-circle" /> */}
+          {/* </Button> */}
           <Button
             className="btns"
             buttonStyle="btn--outline"
@@ -66,7 +66,8 @@ function HeroHome() {
                 'https://smartpunkshop.com/collections/suffocate-faster';
             }}
           >
-            SMARTPUNK <i className="fa-solid fa-record-vinyl" />
+            BUY IT NOW AT SMARTPUNK.COM{' '}
+            <i className="fa-solid fa-record-vinyl" />
           </Button>
         </div>
       </div>
