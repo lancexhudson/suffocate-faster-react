@@ -1,14 +1,10 @@
 export const SliderData = [
   {
     image:
-      'https://user-images.githubusercontent.com/106623072/234151705-69976623-fe83-476e-a827-82d91db89fb9.jpeg',
-  },
-  {
-    image:
-      'https://user-images.githubusercontent.com/106623072/233873241-64a0d6fa-a927-47cb-bbf0-78f7f20c93cb.jpeg',
-  },
-  {
-    image:
       'https://github.com/lancexhudson/tight-grip-react/assets/106623072/09e28b9e-f3e9-41a6-9964-ab8c977ab949',
+  },
+  {
+    image:
+      'https://private-user-images.githubusercontent.com/106623072/246970761-59449f38-5ffd-4e3a-9a26-95b9a46474e6.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg3MjIzMDEyLCJuYmYiOjE2ODcyMjI3MTIsInBhdGgiOiIvMTA2NjIzMDcyLzI0Njk3MDc2MS01OTQ0OWYzOC01ZmZkLTRlM2EtOWEyNi05NWI5YTQ2NDc0ZTYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDYyMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA2MjBUMDA1ODMyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MmEwODJmNWUwMTMzYmZiMTEyMTk0N2YxZTI2Mjg2MzE5MzA1ZmM1NzQyNmNlZjk1Y2UyNjk5Zjc5OTg5YTEyOSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.EpvBnZ0g2tmLQmRXdUIKebqY2xzDWFv-hFR0wUp_wt8',
   },
 ];
