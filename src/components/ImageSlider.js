@@ -63,7 +63,6 @@ const ImageSlider = ({ slides }) => {
         </div>
       </div> */}
       <section className="slider">
-        {/* <FontAwesomeIcon icon="fa-regular fa-circle-arrow-left" /> */}
         {/* <FaCircleArrowLeft className="left-arrow" onClick={prevSlide} /> */}
         <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
         <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
