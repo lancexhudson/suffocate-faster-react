@@ -13,7 +13,12 @@ function HeroShowsAlt() {
         <div id="title-sub">JULY 21</div>
         {/* <div className="artwork"> */}
         <img src={SF072123} alt="This is the Way Vol. 1" className="artwork" />
-        <div id="link">TICKETS</div>
+        <div id="link">
+          {' '}
+          <a href="https://google.com/" className="link-hover">
+            TICKETS
+          </a>
+        </div>
       </div>
       <div className="album-music-container">
         <div id="title">PONTIAC, MI</div>
@@ -27,7 +32,7 @@ function HeroShowsAlt() {
         />
 
         <div id="link">
-          <a href="https://google.com/" className="Link-hover">
+          <a href="https://google.com/" className="link-hover">
             TICKETS
           </a>
         </div>

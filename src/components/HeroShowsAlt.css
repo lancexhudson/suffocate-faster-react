@@ -64,9 +64,10 @@
   color: red;
 }
 
-/* .link-hover:hover {
-  color: red;
-} */
+.link-hover:visited {
+  text-decoration: none;
+  color: #fff;
+}
 
 @media screen and (max-width: 960px) {
   .hero-music-container {
