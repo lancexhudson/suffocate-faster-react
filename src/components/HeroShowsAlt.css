@@ -3,10 +3,10 @@
     url('/src/assets/background.jpg') center top/ cover no-repeat;
   /* background: url('/src/assets/background.jpg') center center/ cover no-repeat; */
   /* alt way of doing background image: center center w/ background2.jpg 
- + remove  background-attachment: fixed*/
+   + remove  background-attachment: fixed*/
   /* background-position: fixed; */
   background-attachment: fixed;
-  height: 68vh;
+  height: 70vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -27,38 +27,61 @@
   margin: 25px;
 }
 
-.album-music-container:hover {
+/* .album-music-container:hover {
   transform: scale(1.01);
-}
+} */
 
-#title:hover {
+/* #title:hover {
   cursor: pointer;
-}
+} */
 
 #title {
   color: #fff;
-  font-size: 26px;
+  font-size: 1.5rem;
 }
 
 #title-sub {
   color: #fff;
-  font-size: 15px;
+  font-size: 1.1;
 }
 
 .artwork {
-  width: 100%;
-  height: auto;
-  max-width: 310px;
+  width: auto;
+  height: 100%;
+  max-height: 350px;
 }
+
+#link {
+  color: #fff;
+  font-size: 1.1rem;
+  padding-top: 5px;
+}
+
+#link:hover {
+  /* transform: scale(1.01); */
+  text-decoration: underline;
+  cursor: pointer;
+  color: red;
+}
+
+/* .link-hover:hover {
+  color: red;
+} */
 
 @media screen and (max-width: 960px) {
   .hero-music-container {
     background-attachment: fixed;
-    font-size: 70px;
+    font-size: 1.5rem;
     padding-top: 100px;
     margin-top: -150px;
     display: block;
     overflow: scroll;
+  }
+
+  #link {
+    color: #fff;
+    font-size: 1.1rem;
+    padding-top: 5px;
   }
 }
 
@@ -66,17 +89,23 @@
   .hero-music-container {
     background-attachment: fixed;
     display: block;
-    font-size: 50px;
+    font-size: 1.5rem;
     margin-top: -100px;
   }
 
   #title {
     color: #fff;
-    font-size: 22px;
+    font-size: 1.5rem;
   }
 
   #title-sub {
     color: #fff;
-    font-size: 15px;
+    font-size: 1.1rem;
+  }
+
+  #link {
+    color: #fff;
+    font-size: 1.1rem;
+    padding-top: 5px;
   }
 }

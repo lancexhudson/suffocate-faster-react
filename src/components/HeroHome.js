@@ -66,8 +66,7 @@ function HeroHome() {
                 'https://smartpunkshop.com/collections/suffocate-faster';
             }}
           >
-            BUY IT NOW AT SMARTPUNK.COM{' '}
-            <i className="fa-solid fa-record-vinyl" />
+            SMARTPUNK.COM <i className="fa-solid fa-record-vinyl" />
           </Button>
         </div>
       </div>

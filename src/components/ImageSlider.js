@@ -28,40 +28,6 @@ const ImageSlider = ({ slides }) => {
 
   return (
     <div className="future-shows-container">
-      {/* <div className="album-container">
-        <div className="upcoming-text"></div>
-        <div className="hero-btns">
-          <Button
-            className="btns"
-            buttonStyle="btn--outline"
-            buttonSize="btn--large"
-            id="toggle"
-            onClick={(e) => {
-              e.preventDefault();
-              window.location.href = <Link to="/PastShows"></Link>;
-            }}
-          >
-            {' '}
-            UPCOMING SHOWS
-          </Button>
-          <Button
-            className="btns"
-            buttonStyle="btn--outline"
-            buttonSize="btn--large"
-            // onClick={play}
-            // onClick={<Link to={HeroShowsPastImages} />}
-          >
-            <Link
-              to="/PastShows"
-              className="btns"
-              buttonStyle="btn--outline"
-              buttonSize="btn--large"
-            >
-              PAST SHOWS
-            </Link>
-          </Button>
-        </div>
-      </div> */}
       <section className="slider">
         {/* <FaCircleArrowLeft className="left-arrow" onClick={prevSlide} /> */}
         <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
@@ -77,7 +43,42 @@ const ImageSlider = ({ slides }) => {
           );
         })}
       </section>
+
+      <div className="album-container">
+        {/* <div className="upcoming-text"></div>
+        <div className="hero-btns">
+          <Button
+            className="btns"
+            buttonStyle="btn--outline"
+            buttonSize="btn--large"
+            id="toggle"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = <Link to="/PastShows"></Link>;
+            }}
+          >
+            {' '}
+            UPCOMING SHOWS
+          </Button></div> */}
+        <Button
+          className="btns"
+          buttonStyle="btn--outline"
+          buttonSize="btn--large"
+          // onClick={play}
+          // onClick={<Link to={HeroShowsPastImages} />}
+        >
+          <Link
+            to="/PastShows"
+            className="btns"
+            buttonStyle="btn--outline"
+            buttonSize="btn--large"
+          >
+            PAST SHOWS
+          </Link>
+        </Button>
+      </div>
     </div>
+    // </div>
   );
 };
 

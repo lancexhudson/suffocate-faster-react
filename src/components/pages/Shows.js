@@ -1,4 +1,5 @@
 import React from 'react';
+import HeroShowsAlt from '../HeroShowsAlt';
 import HeroShows from '../HeroShows';
 import Cards from '../Cards';
 import '../../App.css';
@@ -8,7 +9,8 @@ import HeroShowsPastImages from '../HeroShowsPastImages';
 function Shows() {
   return (
     <div>
-      <HeroShows />
+      <HeroShowsAlt />
+      {/* <HeroShows /> */}
       {/* <Cards /> */}
     </div>
   );
