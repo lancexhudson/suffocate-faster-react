@@ -15,6 +15,11 @@ import Player from './AudioPlayer';
 import promoMerch from '../assets/promoMerch.jpeg';
 
 function HeroHome() {
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+    if (newWindow) newWindow.opener = null;
+  };
+
   // function play() {
   //   new Audio(lostOnes).play();
   // }
@@ -55,15 +60,16 @@ function HeroHome() {
             {/* SOUNDCLOUD <i className="fa-brands fa-soundcloud" /> */}
           {/* PLAY SONG <i className="far fa-play-circle" /> */}
           {/* </Button> */}
+
           <Button
             className="btns"
             buttonStyle="btn--outline"
             buttonSize="btn--large"
-            onClick={(e) => {
-              e.preventDefault();
-              window.location.href =
-                'https://smartpunkshop.com/collections/suffocate-faster';
-            }}
+            onClick={() =>
+              openInNewTab(
+                'https://smartpunkshop.com/collections/suffocate-faster'
+              )
+            }
           >
             SMARTPUNK.COM <i className="fa-solid fa-record-vinyl" />
           </Button>
