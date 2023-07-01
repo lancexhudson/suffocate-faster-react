@@ -6,7 +6,7 @@ import { Button } from './Button';
 import './HeroHome.css';
 import artwork from '../assets/artwork.png';
 import epVinyl from '../assets/epVinyl.png';
-import lostOnes from '../assets/lost-ones.mp3';
+// import lostOnes from '../assets/lost-ones.mp3';
 import PlayerLogic from '../player/PlayerLogic';
 // import Player from '../player/Player';
 import { Link } from 'react-router-dom';

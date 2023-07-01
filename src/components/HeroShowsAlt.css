@@ -1,4 +1,4 @@
-.hero-music-container {
+.hero-shows-container {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url('/src/assets/background.jpg') center top/ cover no-repeat;
   /* background: url('/src/assets/background.jpg') center center/ cover no-repeat; */
@@ -19,7 +19,7 @@
   margin-bottom: -80px;
 }
 
-.album-music-container {
+.shows-container {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
   display: flex;
   flex-direction: column;
@@ -38,42 +38,42 @@
   cursor: pointer;
 } */
 
-#title {
+#location {
   color: #fff;
   font-size: 1.5rem;
 }
 
-#title-sub {
+#date {
   color: #fff;
   font-size: 1.1;
 }
 
-.artwork {
+.flyer {
   width: auto;
   height: 100%;
   max-height: 350px;
 }
 
-#link {
+#ticket-link {
   color: #fff;
   font-size: 1.1rem;
   padding-top: 5px;
 }
 
-#link:hover {
+#ticket-link:hover {
   /* transform: scale(1.01); */
   text-decoration: underline;
   cursor: pointer;
   color: #fff;
 }
 
-.link-hover:visited {
+.ticket-link-hover:visited {
   text-decoration: none;
   color: #fff;
 }
 
 @media screen and (max-width: 960px) {
-  .hero-music-container {
+  .hero-shows-container {
     background-attachment: fixed;
     font-size: 1.5rem;
     padding-top: 100px;
@@ -83,7 +83,7 @@
     overflow: scroll;
   }
 
-  #link {
+  #ticket-link {
     color: #fff;
     font-size: 1.1rem;
     padding-top: 5px;
@@ -91,24 +91,33 @@
 }
 
 @media screen and (max-width: 768px) {
-  .hero-music-container {
+  .hero-shows-container {
     background-attachment: fixed;
     display: block;
     font-size: 1.5rem;
+    padding-top: 100px;
+    padding-bottom: 150px;
     margin-top: -100px;
   }
 
-  #title {
+  #location {
     color: #fff;
     font-size: 1.5rem;
   }
 
-  #title-sub {
+  #date {
     color: #fff;
     font-size: 1.1rem;
   }
 
-  #link {
+  .flyer {
+    width: 100%;
+    height: auto;
+    max-width: 310px;
+    padding: 15px 0;
+  }
+
+  #ticket-link {
     color: #fff;
     font-size: 1.1rem;
     padding-top: 5px;

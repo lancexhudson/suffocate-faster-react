@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import lostOnes from '../assets/lost-ones.mp3';
+// import lostOnes from '../assets/lost-ones.mp3';
 
 function AudioPlayer({ lostOnes }) {
   const [isPlaying, setIsPlaying] = useState(false);
