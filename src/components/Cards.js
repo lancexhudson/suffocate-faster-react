@@ -52,8 +52,8 @@ function Cards() {
           </a>
         </div>
       </div>
-      <div id="contact">FOR INFO & BOOKING CONTACT</div>
-      <div id="contact2">CHRISTOPHER TOWNING: CTOWNING@GMAIL.COM</div>
+      {/* <div id="contact">FOR INFO & BOOKING CONTACT</div> */}
+      {/* <div id="contact2">CHRISTOPHER TOWNING: CTOWNING@GMAIL.COM</div> */}
     </div>
   );
 }

@@ -25,15 +25,6 @@ function HeroShowsAlt() {
         >
           TICKETS
         </div>
-        {/* <div id="link">
-          {' '}
-          <a
-            href="https://www.facebook.com/alsbarlexington/"
-            className="link-hover"
-          >
-            TICKETS
-          </a>
-        </div> */}
       </div>
       <div className="album-music-container">
         <div id="title">PONTIAC, MI</div>

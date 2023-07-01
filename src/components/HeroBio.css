@@ -55,11 +55,21 @@
   padding: 20px 20px;
 }
 
-#members {
+.members {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   font-size: 0.95rem;
   max-width: 700px;
   padding: 10px 20px;
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media screen and (max-width: 960px) {

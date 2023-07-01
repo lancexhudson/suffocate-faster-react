@@ -6,7 +6,7 @@
  + remove  background-attachment: fixed*/
   /* background-position: fixed; */
   background-attachment: fixed;
-  height: 68vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -14,6 +14,8 @@
   align-items: center;
   object-fit: contain;
   overflow: hidden;
+  margin-top: -90px;
+  margin-bottom: -90px;
 }
 
 .album-music-container {
@@ -56,6 +58,7 @@
     background-attachment: fixed;
     font-size: 70px;
     padding-top: 100px;
+    padding-bottom: 100px;
     margin-top: -150px;
     display: block;
     overflow: scroll;
