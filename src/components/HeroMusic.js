@@ -6,6 +6,11 @@ import messenger from '../assets/messenger.jpeg';
 import artwork from '../assets/artwork.png';
 
 function HeroMusic() {
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+    if (newWindow) newWindow.opener = null;
+  };
+
   return (
     <div className="hero-music-container">
       <div className="album-music-container">
@@ -13,6 +18,16 @@ function HeroMusic() {
         <div id="title-sub">SMARTPUNK</div>
         {/* <div className="artwork"> */}
         <img src={artwork} alt="This is the Way Vol. 1" className="artwork" />
+        <div
+          id="ticket-link"
+          onClick={() =>
+            openInNewTab(
+              'https://smartpunkshop.com/collections/suffocate-faster'
+            )
+          }
+        >
+          BUY IT NOW
+        </div>
         {/* </div> */}
       </div>
       <div className="album-music-container">
@@ -24,6 +39,17 @@ function HeroMusic() {
           alt="Don't Kill the Messenger"
           className="artwork"
         />
+        <div
+          id="ticket-link"
+          onClick={() =>
+            openInNewTab(
+              'https://overandoutrecordings.bigcartel.com/product/suffocate-faster-don-t-kill-the-messenger-lp-preorder'
+            )
+          }
+        >
+          BUY IT NOW
+        </div>
+
         {/* </div> */}
       </div>
       <div className="album-music-container">
@@ -31,6 +57,18 @@ function HeroMusic() {
         <div id="title-sub">BROKEN SOUNDS</div>
         {/* <div className="artwork"> */}
         <img src={onlyTime} alt="Only Time Will Tell" className="artwork" />
+
+        <div
+          id="ticket-link"
+          onClick={() =>
+            openInNewTab(
+              'https://www.discogs.com/master/2150773-Suffocate-Faster-Only-Time-Will-Tell'
+            )
+          }
+        >
+          BUY IT NOW
+        </div>
+
         {/* </div> */}
       </div>
     </div>

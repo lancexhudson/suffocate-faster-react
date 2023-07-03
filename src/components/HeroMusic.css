@@ -56,6 +56,12 @@
   max-width: 310px;
 }
 
+#ticket-link {
+  color: #fff;
+  font-size: 1.1rem;
+  padding-top: 5px;
+}
+
 @media screen and (max-width: 960px) {
   .hero-music-container {
     background-attachment: fixed;
@@ -69,6 +75,12 @@
 
   .album-music-container {
     /* margin-bottom: 100px; */
+  }
+
+  #ticket-link {
+    color: #fff;
+    font-size: 1.1rem;
+    padding-top: 5px;
   }
 }
 
@@ -92,5 +104,11 @@
   #title-sub {
     color: #fff;
     font-size: 15px;
+  }
+
+  #ticket-link {
+    color: #fff;
+    font-size: 1.1rem;
+    padding-top: 5px;
   }
 }
