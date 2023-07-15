@@ -3,6 +3,7 @@ import './HeroShowsAlt.css';
 import '../App.css';
 import SF072123 from '../assets/SF072123.jpeg';
 import SF081923 from '../assets/SF081923.png';
+import SF072023 from '../assets/SF072023.png';
 import { Link } from 'react-router-dom';
 
 function HeroShowsAlt() {
@@ -13,6 +14,22 @@ function HeroShowsAlt() {
 
   return (
     <div className="hero-shows-container">
+      <div className="shows-container">
+        <div id="location">CHICAGO, IL</div>
+        <div id="date">JULY 20</div>
+        <img src={SF072023} alt="Chicago, IL" className="flyer" />
+        <div
+          id="ticket-link"
+          onClick={() =>
+            openInNewTab(
+              'https://dice.fm/event/l5aax-the-rumble-official-preshow-20th-jul-cobra-lounge-chicago-tickets?lng=en-US'
+            )
+          }
+        >
+          TICKETS
+        </div>
+      </div>
+
       <div className="shows-container">
         <div id="location">LEXINGTON, KY</div>
         <div id="date">JULY 21</div>
