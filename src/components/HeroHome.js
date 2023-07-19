@@ -6,6 +6,8 @@ import { Button } from './Button';
 import './HeroHome.css';
 import artwork from '../assets/artwork.png';
 import epVinyl from '../assets/epVinyl.png';
+import goldArtwork from '../assets/goldArtwork.png';
+import goldArtwork2 from '../assets/goldArtwork2.png';
 // import lostOnes from '../assets/lost-ones.mp3';
 import PlayerLogic from '../player/PlayerLogic';
 // import Player from '../player/Player';
@@ -40,8 +42,12 @@ function HeroHome() {
       <p id="upcoming">THIS IS THE WAY VOL. 1</p>
       <p id="upcoming">NOW STREAMING</p>
       {/* <p id="title">PRE-ORDERS ARE AVAILABLE AT SMARTPUNK</p> */}
-      <div className="album-container">
-        <img src={promoMerch} alt="" className="artwork" />
+      <div className="home-container">
+        <div className="release-details">
+          <img src={promoMerch} alt="" className="artwork" />
+          <img src={goldArtwork} alt="" className="artwork" />
+          <img src={goldArtwork2} alt="" className="artwork" />
+        </div>
 
         <div className="hero-btns">
           {/* <Button> 
