@@ -41,14 +41,14 @@ function HeroHome() {
       <div className="home-container">
         <p id="upcoming">THIS IS THE WAY VOL. 1</p>
         <p id="upcoming">NOW STREAMING</p>
-        <div className="release-details">
-          <img src={promoMerch} alt="" className="artwork" />
-          <img src={goldArtwork} alt="" className="artwork" />
-          <img src={goldArtwork2} alt="" className="artwork" />
-        </div>
-
-        <div className="hero-btns">
-          {/* <Button> 
+      </div>
+      <div className="release-details">
+        <img src={promoMerch} alt="" className="artwork" />
+        <img src={goldArtwork} alt="" className="artwork" />
+        <img src={goldArtwork2} alt="" className="artwork" />
+      </div>
+      <div className="hero-btns">
+        {/* <Button> 
           // className="btns"
           // buttonStyle="btn--outline"
           // buttonSize="btn--large"
@@ -62,22 +62,21 @@ function HeroHome() {
           // >
             {' '}
             {/* SOUNDCLOUD <i className="fa-brands fa-soundcloud" /> */}
-          {/* PLAY SONG <i className="far fa-play-circle" /> */}
-          {/* </Button> */}
+        {/* PLAY SONG <i className="far fa-play-circle" /> */}
+        {/* </Button> */}
 
-          <Button
-            className="btns"
-            buttonStyle="btn--outline"
-            buttonSize="btn--large"
-            onClick={() =>
-              openInNewTab(
-                'https://smartpunkshop.com/collections/suffocate-faster'
-              )
-            }
-          >
-            SMARTPUNK.COM <i className="fa-solid fa-record-vinyl" />
-          </Button>
-        </div>
+        <Button
+          className="btns"
+          buttonStyle="btn--outline"
+          buttonSize="btn--large"
+          onClick={() =>
+            openInNewTab(
+              'https://smartpunkshop.com/collections/suffocate-faster'
+            )
+          }
+        >
+          SMARTPUNK.COM <i className="fa-solid fa-record-vinyl" />
+        </Button>
       </div>
     </div>
   );
