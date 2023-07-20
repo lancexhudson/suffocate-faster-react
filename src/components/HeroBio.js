@@ -2,6 +2,7 @@ import React from 'react';
 // import '../App.css';
 import './HeroBio.css';
 import { Button } from './Button';
+import SFPromo from '../assets/SFPromo.jpg';
 
 function HeroBio() {
   return (
@@ -11,11 +12,7 @@ function HeroBio() {
         USA.{' '}
       </p>
       <div>
-        <img
-          src="https://user-images.githubusercontent.com/106623072/234729894-009cb551-d4b8-47e3-8080-3cfa92aaa04c.jpg"
-          alt="promo"
-          id="promo-pic"
-        />
+        <img src={SFPromo} alt="promo" id="promo-pic" />
       </div>
       <p id="about">
         FORMED IN 2001, THE BAND RELEASED THEIR FULL-LENGTH DEBUT, "ONLY TIME
@@ -28,8 +25,7 @@ function HeroBio() {
         "THIS IS THE WAY VOL. 1" SET TO BE RELEASED IN JUNE 2023.
         <br />
         <br />
-        SUFFOCATE FASTER IS CHRIS TOWNING, CHRIS ALSIP, LANCE HUDSON, AND COREY
-        WILLIAMS
+        SUFFOCATE FASTER IS COREY, JOHN, LANCE, CHRIS, AND CHRIS
       </p>
 
       {/* <div id="member-list">

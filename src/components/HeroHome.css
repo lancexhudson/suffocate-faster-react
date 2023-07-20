@@ -161,7 +161,7 @@ p {
   .btn-mobile {
     display: block;
     text-decoration: none;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
   }
 
   .btn {
