@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import './HeroMusic.css';
+import BRDWYW from '../assets/BR-DWYW.webp';
 import onlyTime from '../assets/onlyTime.jpg';
 import messenger from '../assets/messenger.jpeg';
 import artwork from '../assets/artwork.png';
@@ -13,6 +14,26 @@ function HeroMusic() {
 
   return (
     <div className="hero-music-container">
+      <div className="album-music-container">
+        <div id="title">DO WHAT YOU WANT</div>
+        <div id="title-sub">SMARTPUNK</div>
+        {/* <div className="artwork"> */}
+        <img src={BRDWYW} alt="DO WHAT YOU WANT" className="artwork" />
+
+        <div
+          id="ticket-link"
+          onClick={() =>
+            openInNewTab(
+              'https://open.spotify.com/track/6db0A175pjKRRlsNH773ly?si=fcf388bd4c134222'
+            )
+          }
+        >
+          LISTEN ON SPOTIFY
+        </div>
+
+        {/* </div> */}
+      </div>
+
       <div className="album-music-container">
         <div id="title">THIS IS THE WAY VOL. 1</div>
         <div id="title-sub">SMARTPUNK</div>

@@ -42,7 +42,8 @@
 
 #title {
   color: #fff;
-  font-size: 26px;
+  /* font-size: 26px; */
+  font-size: 1.1rem;
 }
 
 #title-sub {
