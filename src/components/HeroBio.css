@@ -1,119 +1,123 @@
-.hero-bio-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url('/src/assets/background.jpg') center top/ cover no-repeat;
-  /* alt way of doing background image: center center w/ background2.jpg 
- + remove  background-attachment: fixed*/
-  /* background-position: fixed; */
-  background-attachment: fixed;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  object-fit: contain;
-  /* padding-bottom: 25px; */
-  overflow: hidden;
+/* -------------------------------------------------
+   1. GLOBAL RESET – prevents padding from blowing out width
+   ------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* page can grow */
+  font-family: inherit;
 }
 
+/* -------------------------------------------------
+   2. HERO CONTAINER – grows with content
+   ------------------------------------------------- */
+/* -------------------------------------------------
+   HERO CONTAINER – responsive bottom padding
+   ------------------------------------------------- */
+.hero-bio-container {
+  min-height: 100vh;
+  height: auto;
+  padding: 20px 20px clamp(40px, 8vh, 60px); /* <-- NEW */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url('/src/assets/background.jpg') center top / cover no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: visible;
+}
+
+/* -------------------------------------------------
+   3. CONTENT BLOCKS – consistent spacing
+   ------------------------------------------------- */
 .artwork-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: auto;
   max-width: 650px;
   padding-top: 25px;
-  object-fit: cover;
 }
 
+#about,
+#member-list {
+  width: 100%;
+  max-width: 675px;
+  padding: 20px 20px 1.5rem; /* bottom breathing room */
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: center; /* optional – keeps bio tidy */
+}
 #about {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #fff;
-  font-size: 0.9rem;
-  /* padding-bottom: 0.5rem; */
-  width: 100%;
-  max-width: 675px;
-  padding: 20px 20px;
+}
+#member-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #promo-pic {
-  /* height auto and width 100% */
-  /* height: auto; */
-  /* width: 100%; */
   max-width: 675px;
+  height: auto;
   object-fit: contain;
   padding: 0 20px;
 }
 
-#member-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 0.9rem;
-  max-width: 675px;
-  padding: 0 20px;
-}
-
-/* .right-panel {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
+/* -------------------------------------------------
+   4. RESPONSIVE ADJUSTMENTS
+   ------------------------------------------------- */
+/* Keep the same responsive tweaks you already have */
 
 @media screen and (max-width: 960px) {
   .hero-bio-container {
-    font-size: 70px;
-    margin-top: -150px;
-    padding-top: 100px;
-    padding-bottom: 120px;
-    padding: 0px 20px;
-    overflow: scroll;
+    padding: 20px 20px clamp(35px, 7vh, 20px);
   }
 
   #promo-pic {
-    height: auto;
     max-width: 700px;
   }
-
-  /* #member-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 675px;
-    padding-bottom: 20px;
-  } */
 }
 
 @media screen and (max-width: 768px) {
   .hero-bio-container {
-    font-size: 50px;
-    padding-top: 100px;
-    padding-bottom: 130px;
-    margin-top: -10px;
-    padding: 20px 20px;
+    padding: 20px 20px clamp(30px, 6vh, 20px);
   }
 
-  #about {
-    max-width: 320px;
-  }
-
+  #about,
+  #member-list,
   #promo-pic {
-    height: auto;
-    max-width: 330px;
+    max-width: 350px; /* shrink to fit phone */
   }
+}
 
-  /* #member-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 20px;
-    max-width: 320px;
-  } */
+/* -------------------------------------------------
+   5. OPTIONAL: Header / Footer (adjust heights!)
+   ------------------------------------------------- */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
 }
