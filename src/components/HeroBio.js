@@ -1,7 +1,7 @@
 import React from 'react';
 // import '../App.css';
 import './HeroBio.css';
-import { Button } from './Button';
+// import { Button } from './Button';
 import SFPromo from '../assets/SFPromo.jpg';
 
 function HeroBio() {

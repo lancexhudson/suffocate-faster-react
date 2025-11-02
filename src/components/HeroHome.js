@@ -1,11 +1,11 @@
 import React from 'react';
-import { useRef, useState, useEffect } from 'react';
+// import { useRef, useState, useEffect } from 'react';
 // import AudioPlayer from './AudioPlayer';
 import '../App.css';
 import { Button } from './Button';
 import './HeroHome.css';
-import artwork from '../assets/artwork.png';
-import epVinyl from '../assets/epVinyl.png';
+// import artwork from '../assets/artwork.png';
+// import epVinyl from '../assets/epVinyl.png';
 import goldArtwork from '../assets/goldArtwork.png';
 import goldArtwork2 from '../assets/goldArtwork2.png';
 // import lostOnes from '../assets/lost-ones.mp3';
